@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-dxzi@@#n4wf21(%080@&q%bp#c)xn99jbq=q$d3l9^_*1oz2&b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "schoolflow-i1s8.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
 
 
 # Application definition
