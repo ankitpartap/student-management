@@ -1,0 +1,54 @@
+{% extends 'studentapp/base.html' %}
+{% load static %}
+
+{% block title %}Home - Student Management System{% endblock %}
+
+{% block content %}
+<div class="row align-items-center g-5 py-5">
+    <div class="col-lg-7">
+        <h1 class="display-5 fw-bold text-primary">Manage students, courses, and enrollments with ease.</h1>
+        <p class="lead text-muted">This beginner-friendly web application demonstrates Django CRUD, authentication, forms, and Bootstrap UI in a clean and modern layout.</p>
+        <div class="d-flex gap-3">
+            <a href="{% url 'login' %}" class="btn btn-primary btn-lg">Go to Dashboard</a>
+            <a href="{% url 'student-list' %}" class="btn btn-outline-primary btn-lg">View Students</a>
+        </div>
+    </div>
+    <div class="col-lg-5">
+        <div class="card border-0 shadow-lg rounded-4 p-4">
+            <h5 class="fw-bold mb-3">What you can do</h5>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item px-0">Create and manage students</li>
+                <li class="list-group-item px-0">Organize courses and fees</li>
+                <li class="list-group-item px-0">Track enrollments easily</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="row g-4 mt-2">
+    <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-person-lines-fill text-primary"></i> Student Module</h5>
+                <p class="card-text text-muted">Add, edit, search, and delete students with validation-friendly forms.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-journal-bookmark-fill text-primary"></i> Course Module</h5>
+                <p class="card-text text-muted">Manage course details, codes, duration, and fees in a simple interface.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-clipboard2-check-fill text-primary"></i> Enrollment Module</h5>
+                <p class="card-text text-muted">Connect students and courses while preventing duplicate enrollments.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
